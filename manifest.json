@@ -2,6 +2,17 @@
     "manifest_version": 2,
     "name": "Coronavirus Blocker/Lover",
     "version": "0.1.0",
+    "description": "This is a simple google chrome extension what block or mark coronavirus tag",
+    "author": "DC",
+    "icons":{
+        "128": "virus.png"
+    },
+    "browser_action":{
+        "default_icon": "virus.png",
+        "default_title": "Coronavirus Blocker",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
