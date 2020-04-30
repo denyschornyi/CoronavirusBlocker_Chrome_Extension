@@ -10,17 +10,11 @@
     "browser_action":{
         "default_icon": "virus.png",
         "default_title": "Coronavirus Blocker",
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "javascript": "main.js"
     },
     "permissions": ["activeTab"],
     "background": {
-        "scripts": ["main.js"]
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["script.js"],
-            "css": ["style.css"]
-        }
-    ]
+        "script":["main.js"]
+    }
 }
